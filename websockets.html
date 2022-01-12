@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <style>
+    #messages {
+      background-color: yellow;
+      font-size: 3;
+      font-weight: bold;
+      line-height: 140%;
+    }
+    #status {
+      background-color: red;
+      font-size: 4;
+      font-weight: bold;
+      color: white;
+      line-height: 140%;
+    }
+  </style>
+  <head>
+    <title>Websockets Using JavaScript MQTT Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="out_messages"></div>
+    <script>
+      var page = "client";
+      var obdata = {};
+      var data = {}
+      var connected_flag = 0;
+      var mqtt;
+      var reconnectTimeout = 2000;
+      var host = "127.0.0.1";
+      var port = 8083;
+      var row = 0;
+      var out_msg = "";
+      var mcount = 0;
+    </script>
+  </body>
+</html>
